@@ -43,7 +43,7 @@ ReleaseManager::ReleaseManager(QObject *parent)
     onStringDownloaded(releases.readAll());
     releases.close();
 
-    QTimer::singleShot(0, this, &ReleaseManager::fetchReleases);
+    // QTimer::singleShot(0, this, &ReleaseManager::fetchReleases);
 }
 
 bool ReleaseManager::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const {

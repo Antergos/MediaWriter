@@ -3,7 +3,7 @@
         "arch": "x86_64",
         "link": "https://antergos.com/download/antergos-live-iso",
         "releaseDate": "2016-11-20",
-        "sha256": "c1d91bf2b9ba24463ea31000ee0ed20f",
+        "md5": "c1d91bf2b9ba24463ea31000ee0ed20f",
         "size": "1795162112",
         "subvariant": "Live",
         "version": "2016.11.20"
@@ -12,7 +12,7 @@
         "arch": "x86_64",
         "link": "https://antergos.com/download/antergos-minimal-iso",
         "releaseDate": "2016-11-20",
-        "sha256": "b60cf1e5075bfa049b0fab2c88f44152",
+        "md5": "b60cf1e5075bfa049b0fab2c88f44152",
         "size": "607125504",
         "subvariant": "Minimal",
         "version": "2016.11.20"
