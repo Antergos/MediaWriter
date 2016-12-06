@@ -5,11 +5,11 @@
 	<id type="desktop">mediawriter.desktop</id>
 	<project_license>GPL-2.0+</project_license>
 	<metadata_license>CC0-1.0</metadata_license>
-	<name>Fedora Media Writer</name>
-	<summary>A tool to create a live USB drive with an edition of Fedora</summary>
+	<name>Antergos Media Writer</name>
+	<summary>A tool to create a live USB drive with an edition of Antergos</summary>
 	<description>
-		<p>A tool to create a bootable live USB drive with an edition of Fedora. Not only can Fedora Media Writer write an image to your flash drive, it can also download it for you. It offers official editions (Server, Workstation), Fedora spins (KDE Plasma Desktop, Xfce Desktop, Cinnamon Desktop,...), and Fedora Labs (Design Suite, Security Lab,...). It provides basic information about each of them to help you make the right choice.</p>
-		<p>Fedora Media Writer can also write other bootable ISOs loaded from your local disk, but keep in mind that it's only tested with Fedora images.</p>
+		<p>A tool to create a bootable live USB drive with an edition of Antergos. Not only can Antergos Media Writer write an image to your flash drive, it can also download it for you. It offers official editions (Server, Workstation), Antergos spins (KDE Plasma Desktop, Xfce Desktop, Cinnamon Desktop,...), and Antergos Labs (Design Suite, Security Lab,...). It provides basic information about each of them to help you make the right choice.</p>
+		<p>Antergos Media Writer can also write other bootable ISOs loaded from your local disk, but keep in mind that it's only tested with Antergos images.</p>
 	</description>
 	<keywords>
         <keyword>iso</keyword>

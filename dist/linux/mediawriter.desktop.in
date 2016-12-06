@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-_Name=Fedora Media Writer
-_Comment=Write Fedora images to your portable drives
+_Name=Antergos Media Writer
+_Comment=Write Antergos images to your portable drives
 Icon=mediawriter
 Exec=mediawriter
 Terminal=false
