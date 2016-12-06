@@ -31,7 +31,7 @@ ApplicationWindow {
     visible: true
     minimumWidth: $(800)
     minimumHeight: $(480)
-    title: "Fedora Media Writer"
+    title: "Antergos Media Writer"
 
     SystemPalette {
         id: palette

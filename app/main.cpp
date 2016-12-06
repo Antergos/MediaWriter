@@ -63,8 +63,8 @@ int main(int argc, char **argv)
 
     qInstallMessageHandler(myMessageOutput); // Install the handler
 
-    QApplication::setOrganizationDomain("fedoraproject.org");
-    QApplication::setOrganizationName("fedoraproject.org");
+    QApplication::setOrganizationDomain("antergos.com");
+    QApplication::setOrganizationName("antergos.com");
     QApplication::setApplicationName("MediaWriter");
 #ifndef __linux
     // qt x11 scaling is broken
