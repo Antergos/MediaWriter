@@ -17,6 +17,7 @@
         <file alias="robotics">assets/logos/png/robotics_icon_grey_pattern.png</file>
         <file alias="scientific">assets/logos/png/scientific_icon_grey_pattern.png</file>
         <file alias="security">assets/logos/png/security-lab_icon_grey_pattern.png</file>
+        <file alias="antergos">assets/logos/png/logo-antergos.png</file>
     </qresource>
     <qresource prefix="/">
         <file alias="metadata.json">assets/metadata.json</file>
