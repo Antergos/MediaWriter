@@ -1,4 +1,4 @@
-Name "Fedora Media Writer"
+Name "Antergos Media Writer"
 OutFile "FMW-setup.exe"
 
 !include "MUI2.nsh"
@@ -9,10 +9,10 @@ XPStyle on
 
 SetCompressor lzma
 
-InstallDir "$PROGRAMFILES\Fedora Media Writer"
-InstallDirRegKey HKEY_LOCAL_MACHINE "SOFTWARE\Fedora Media Writer" ""
+InstallDir "$PROGRAMFILES\Antergos Media Writer"
+InstallDirRegKey HKEY_LOCAL_MACHINE "SOFTWARE\Antergos Media Writer" ""
 
-DirText "Select the directory to install Fedora Media Writer in:"
+DirText "Select the directory to install Antergos Media Writer in:"
 
 !define MUI_ICON ../../app/assets/icon/mediawriter.ico
 
@@ -95,32 +95,32 @@ File /r ..\..\build\app\release\*
 
 ; Create shortcut.
 SetOutPath -
-CreateDirectory "$SMPROGRAMS\Fedora Media Writer"
-CreateShortCut "$SMPROGRAMS\Fedora Media Writer\Fedora Media Writer.lnk" "$INSTDIR\mediawriter.exe"
-CreateShortCut "$SMPROGRAMS\Fedora Media Writer\Uninstall Fedora Media Writer.lnk" "$INSTDIR\uninst.exe" "" "$INSTDIR\uninst.exe" 0
+CreateDirectory "$SMPROGRAMS\Antergos Media Writer"
+CreateShortCut "$SMPROGRAMS\Antergos Media Writer\Antergos Media Writer.lnk" "$INSTDIR\mediawriter.exe"
+CreateShortCut "$SMPROGRAMS\Antergos Media Writer\Uninstall Antergos Media Writer.lnk" "$INSTDIR\uninst.exe" "" "$INSTDIR\uninst.exe" 0
 
 ; Create uninstaller.
-WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Fedora Media Writer" "" "$INSTDIR"
-WriteRegStr HKEY_LOCAL_MACHINE "Software\Microsoft\Windows\CurrentVersion\Uninstall\Fedora Media Writer" "DisplayName" "Fedora Media Writer (remove only)"
-WriteRegStr HKEY_LOCAL_MACHINE "Software\Microsoft\Windows\CurrentVersion\Uninstall\Fedora Media Writer" "UninstallString" '"$INSTDIR\uninst.exe"'
+WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Antergos Media Writer" "" "$INSTDIR"
+WriteRegStr HKEY_LOCAL_MACHINE "Software\Microsoft\Windows\CurrentVersion\Uninstall\Antergos Media Writer" "DisplayName" "Antergos Media Writer (remove only)"
+WriteRegStr HKEY_LOCAL_MACHINE "Software\Microsoft\Windows\CurrentVersion\Uninstall\Antergos Media Writer" "UninstallString" '"$INSTDIR\uninst.exe"'
 WriteUninstaller "$INSTDIR\uninst.exe"
 
 SectionEnd
 
-UninstallText "This will uninstall Fedora Media Writer from your system."
+UninstallText "This will uninstall Antergos Media Writer from your system."
 
 Section Uninstall
 
 ; Delete shortcuts.
-Delete "$SMPROGRAMS\Fedora Media Writer\Fedora Media Writer.lnk"
-Delete "$SMPROGRAMS\Fedora Media Writer\Uninstall Fedora Media Writer.lnk"
-RMDir "$SMPROGRAMS\Fedora Media Writer"
-Delete "$DESKTOP\Fedora Media Writer.lnk"
+Delete "$SMPROGRAMS\Antergos Media Writer\Antergos Media Writer.lnk"
+Delete "$SMPROGRAMS\Antergos Media Writer\Uninstall Antergos Media Writer.lnk"
+RMDir "$SMPROGRAMS\Antergos Media Writer"
+Delete "$DESKTOP\Antergos Media Writer.lnk"
 
 ; Delete registry keys.
 Delete "$INSTDIR\uninst.exe"
-DeleteRegKey HKEY_LOCAL_MACHINE "SOFTWARE\Fedora Media Writer"
-DeleteRegKey HKEY_LOCAL_MACHINE "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fedora Media Writer"
+DeleteRegKey HKEY_LOCAL_MACHINE "SOFTWARE\Antergos Media Writer"
+DeleteRegKey HKEY_LOCAL_MACHINE "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Antergos Media Writer"
 
 ; Delete everything in the installation directory.
 RMDir /R "$INSTDIR"

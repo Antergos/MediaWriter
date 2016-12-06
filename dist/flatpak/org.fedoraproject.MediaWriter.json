@@ -1,5 +1,5 @@
 {
-    "id": "org.fedoraproject.MediaWriter",
+    "id": "com.antergos.MediaWriter",
     "runtime": "org.kde.Platform",
     "runtime-version": "master",
     "sdk": "org.kde.Sdk",

@@ -1,4 +1,7 @@
 /*
+ * Antergos Media Writer
+ * Copyright (C) 2016 Antergos <dev@antergos.com>
+ *
  * Fedora Media Writer
  * Copyright (C) 2016 Martin Bříza <mbriza@redhat.com>
  *

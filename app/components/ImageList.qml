@@ -209,7 +209,7 @@ Item {
                         height: $(64)
 
                         Text {
-                            text: qsTr("About Fedora Media Writer")
+                            text: qsTr("About Antergos Media Writer")
                             font.pixelSize: $(12)
                             anchors {
                                 bottom: parent.bottom
@@ -248,7 +248,7 @@ Item {
                                 width: parent.width
                                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                                 visible: releases.beingUpdated
-                                text: qsTr("Fedora Media Writer is now checking for new releases")
+                                text: qsTr("Antergos Media Writer is now checking for new releases")
                                 font.pixelSize: $(12)
                                 BusyIndicator {
                                     anchors.right: parent.left
@@ -340,7 +340,7 @@ Item {
                         anchors.horizontalCenter: threeDotDots.horizontalCenter
                         Behavior on y { NumberAnimation { duration: 60 } }
                         clip: true
-                        text: qsTr("Display additional Fedora flavors")
+                        text: qsTr("Display additional Antergos Install Media variants")
                         color: "gray"
                     }
                     Timer {

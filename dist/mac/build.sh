@@ -10,7 +10,7 @@ popd >/dev/null
 
 cd "${SCRIPTDIR}/../.."
 
-INSTALLER="$SCRIPTDIR/FedoraMediaWriter-osx-$(git describe --tags).dmg"
+INSTALLER="$SCRIPTDIR/AntergosMediaWriter-osx-$(git describe --tags).dmg"
 
 mkdir -p "build"
 pushd build >/dev/null
@@ -18,10 +18,10 @@ pushd build >/dev/null
 ${QMAKE} .. >/dev/null
 make -j9 >/dev/null
 
-cp "helper/mac/helper.app/Contents/MacOS/helper" "app/Fedora Media Writer.app/Contents/MacOS"
-${MACDEPLOYQT} "app/Fedora Media Writer.app" -dmg -qmldir="../app" -executable="app/Fedora Media Writer.app/Contents/MacOS/helper" -always-overwrite
+cp "helper/mac/helper.app/Contents/MacOS/helper" "app/Antergos Media Writer.app/Contents/MacOS"
+${MACDEPLOYQT} "app/Antergos Media Writer.app" -dmg -qmldir="../app" -executable="app/Antergos Media Writer.app/Contents/MacOS/helper" -always-overwrite
 
-mv "$PWD/app/Fedora Media Writer.dmg" "$INSTALLER"
+mv "$PWD/app/Antergos Media Writer.dmg" "$INSTALLER"
 echo "$INSTALLER"
 
 popd >/dev/null

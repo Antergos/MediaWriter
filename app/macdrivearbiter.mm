@@ -46,7 +46,7 @@ void stopArbiter() {
 }
 
 DADissenterRef OnMountApproval(DADiskRef disk, void *context) {
-    return DADissenterCreate(kCFAllocatorDefault, kDAReturnExclusiveAccess, CFSTR("Fedora Media Writer"));
+    return DADissenterCreate(kCFAllocatorDefault, kDAReturnExclusiveAccess, CFSTR("Antergos Media Writer"));
 }
 
 
