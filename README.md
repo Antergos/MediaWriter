@@ -1,12 +1,12 @@
-# Fedora Media Writer
+# Antergos Media Writer
 
-Fedora Media Writer is a tool that helps users put Fedora images on their portable drives such as flash disks.
+Antergos Media Writer is a tool that helps users put Antergos images on their portable drives such as flash disks.
 
 It is able to automatically download the required image for them and write them in a `dd`-like fashion, using either `dd` itself or some other way to access the drive directly.
 
 This overwrites the drive's partition layout though, so it also provides a way to restore a single-partition layout with a FAT32 partition.
 
-![Fedora Media Writer running, with expanded image list](/dist/screenshots/expanded.png)
+![Antergos Media Writer running, with expanded image list](/dist/screenshots/expanded.png)
 
 ## Status
 
@@ -46,6 +46,6 @@ To release a standalone package, use `macdeployqt`, supplied with your Qt instal
 
 ## Translation
 
-If you want to help with translating Fedora Media Writer, please visit our [Zanata project page](https://fedora.zanata.org/iteration/view/mediawriter/master).
+If you want to help with translating Antergos Media Writer, please visit our [Zanata project page](https://antergos.zanata.org/iteration/view/mediawriter/master).
 
-Information about the individual Fedora flavors are retrieved from the websites and translated as a separate project.
+Information about the individual Antergos flavors are retrieved from the websites and translated as a separate project.
