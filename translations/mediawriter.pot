@@ -1,9 +1,9 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
 
 #: ../app/components/BackButton.qml:53
 msgctxt "BackButton|"
@@ -15,7 +15,12 @@ msgctxt "Download|"
 msgid "Unable to fetch the requested image."
 msgstr ""
 
-#: ../app/utilities.cpp:407
+#: ../app/utilities.cpp:329
+msgctxt "Download|"
+msgid "The download file is not writable."
+msgstr ""
+
+#: ../app/utilities.cpp:413
 msgctxt "Download|"
 msgid "Connection timed out"
 msgstr ""
@@ -27,77 +32,65 @@ msgid "Write %1"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:175
-#: ../app/components/LinuxDownloadDialog.qml:184
 msgctxt "DownloadDialog|"
 msgid "Selected:"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:175
-#: ../app/components/LinuxDownloadDialog.qml:184
 msgctxt "DownloadDialog|"
 msgid "None"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:197
-#: ../app/components/LinuxDownloadDialog.qml:206
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "(%1 B left)"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:198
-#: ../app/components/LinuxDownloadDialog.qml:207
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "(%1 KB left)"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:199
-#: ../app/components/LinuxDownloadDialog.qml:208
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "(%1 MB left)"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:200
-#: ../app/components/LinuxDownloadDialog.qml:209
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "(%1 GB left)"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:222
-#: ../app/components/LinuxDownloadDialog.qml:231
 msgctxt "DownloadDialog|"
 msgid "Write the image immediately when the download is finished"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:297
-#: ../app/components/LinuxDownloadDialog.qml:306
 msgctxt "DownloadDialog|"
 msgid "There are no portable drives connected"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:326
-#: ../app/components/LinuxDownloadDialog.qml:335
 msgctxt "DownloadDialog|"
 msgid "Cancel"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:350
-#: ../app/components/LinuxDownloadDialog.qml:359
 msgctxt "DownloadDialog|"
 msgid "Close"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:353
-#: ../app/components/LinuxDownloadDialog.qml:362
 msgctxt "DownloadDialog|"
 msgid "Retry"
 msgstr ""
 
 #: ../app/components/DownloadDialog.qml:354
-#: ../app/components/LinuxDownloadDialog.qml:363
 msgctxt "DownloadDialog|"
 msgid "Write to disk"
 msgstr ""
@@ -166,7 +159,7 @@ msgstr ""
 
 #: ../app/components/ImageList.qml:343
 msgctxt "ImageList|"
-msgid "Display additional Antergos flavors"
+msgid "Display additional Antergos Install Media variants"
 msgstr ""
 
 #: ../app/linuxdrivemanager.cpp:181
@@ -179,145 +172,204 @@ msgctxt "MacDrive|"
 msgid "Could not find the helper binary. Check your installation."
 msgstr ""
 
-#: ../app/releasemanager.cpp:275 ../app/releasemanager.cpp:281
+#: ../app/releasemanager.cpp:295
+msgctxt "Release|"
+msgid "Fully functional Live Antergos Environment"
+msgstr ""
+
+#: ../app/releasemanager.cpp:312
+msgctxt "Release|"
+msgid "Installer only"
+msgstr ""
+
+#: ../app/releasemanager.cpp:327
 msgctxt "Release|"
 msgid "Pick a file from your drive(s)"
 msgstr ""
 
-#: ../app/releasemanager.cpp:275 ../app/releasemanager.cpp:281
+#: ../app/releasemanager.cpp:360
 msgctxt "Release|"
-msgid ""
-"<p>Here you can choose a OS image from your hard drive to be written to your "
-"flash disk</p><p>Currently it is only supported to write raw disk images (."
-"iso or .bin)</p>"
+msgid "Fedora Spins"
 msgstr ""
 
-#: ../app/releasemanager.cpp:307
+#: ../app/releasemanager.cpp:362
 msgctxt "Release|"
-msgid "Antergos Spins"
+msgid "Fedora Labs"
 msgstr ""
 
-#: ../app/releasemanager.cpp:309
-msgctxt "Release|"
-msgid "Antergos Labs"
-msgstr ""
-
-#: ../app/releasemanager.cpp:311
+#: ../app/releasemanager.cpp:364
 msgctxt "Release|"
 msgid "Other"
 msgstr ""
 
-#: ../app/releasemanager.cpp:740
+#: ../app/releasemanager.cpp:797
 msgctxt "ReleaseArchitecture|"
 msgid "Intel 64bit"
 msgstr ""
 
-#: ../app/releasemanager.cpp:740
+#: ../app/releasemanager.cpp:797
 msgctxt "ReleaseArchitecture|"
 msgid "ISO format image for Intel, AMD and other compatible PCs (64-bit)"
 msgstr ""
 
-#: ../app/releasemanager.cpp:741
+#: ../app/releasemanager.cpp:798
 msgctxt "ReleaseArchitecture|"
 msgid "Intel 32bit"
 msgstr ""
 
-#: ../app/releasemanager.cpp:741
+#: ../app/releasemanager.cpp:798
 msgctxt "ReleaseArchitecture|"
 msgid "ISO format image for Intel, AMD and other compatible PCs (32-bit)"
 msgstr ""
 
-#: ../app/releasemanager.cpp:742
+#: ../app/releasemanager.cpp:799
 msgctxt "ReleaseArchitecture|"
 msgid "ARM v7"
 msgstr ""
 
-#: ../app/releasemanager.cpp:742
+#: ../app/releasemanager.cpp:799
 msgctxt "ReleaseArchitecture|"
 msgid ""
-"LZMA-compressed raw image for ARM v7-A machines like the Raspberry Pi 2 and "
-"3"
+"LZMA-compressed raw image for ARM v7-A machines like the Raspberry Pi 2 and 3"
 msgstr ""
 
-#: ../app/releasemanager.cpp:275 ../app/releasemanager.cpp:281
+#: ../app/releasemanager.cpp:285 ../app/releasemanager.cpp:302
+msgctxt "ReleaseListModel|"
+msgid ""
+"The Live Install Image allows you to try a fully functional Antergos "
+"environment without making any changes to the current state of your system. "
+"When you are ready, you can create a permanent place for Antergos on your "
+"system using our GUI installer."
+msgstr ""
+
+#: ../app/releasemanager.cpp:286 ../app/releasemanager.cpp:303
+msgctxt "ReleaseListModel|"
+msgid "Our default install media."
+msgstr ""
+
+#: ../app/releasemanager.cpp:287 ../app/releasemanager.cpp:304
+msgctxt "ReleaseListModel|"
+msgid ""
+"A fully functional GNOME Desktop Environment that runs directly from a USB "
+"drive and includes our GUI installer."
+msgstr ""
+
+#: ../app/releasemanager.cpp:288 ../app/releasemanager.cpp:305
+msgctxt "ReleaseListModel|"
+msgid "Test drive Antergos without making any changes to your system."
+msgstr ""
+
+#: ../app/releasemanager.cpp:294
+msgctxt "ReleaseListModel|"
+msgid "Antergos Live Install Media"
+msgstr ""
+
+#: ../app/releasemanager.cpp:311
+msgctxt "ReleaseListModel|"
+msgid "Antergos Minimal Install Media"
+msgstr ""
+
+#: ../app/releasemanager.cpp:319
+msgctxt "ReleaseListModel|"
+msgid ""
+"Here you can choose a OS image from your hard drive to be written to your "
+"flash disk."
+msgstr ""
+
+#: ../app/releasemanager.cpp:320
+msgctxt "ReleaseListModel|"
+msgid "Currently only raw disk images (.iso or .bin) are supported."
+msgstr ""
+
+#: ../app/releasemanager.cpp:326
 msgctxt "ReleaseListModel|"
 msgid "Custom image"
 msgstr ""
 
-#: ../app/releasemanager.cpp:644 ../app/releasemanager.cpp:654
+#: ../app/releasemanager.cpp:697 ../app/releasemanager.cpp:707
 msgctxt "ReleaseVariant|"
 msgid "The downloaded image is corrupted"
 msgstr ""
 
-#: ../app/releasemanager.h:309
+#: ../app/releasemanager.cpp:711
+msgctxt "ReleaseVariant|"
+msgid "The downloaded file is not readable."
+msgstr ""
+
+#: ../app/releasemanager.h:373
 msgctxt "ReleaseVariant|"
 msgid "Preparing"
 msgstr ""
 
-#: ../app/releasemanager.h:310
+#: ../app/releasemanager.h:374
 msgctxt "ReleaseVariant|"
 msgid "Downloading"
 msgstr ""
 
-#: ../app/releasemanager.h:311
+#: ../app/releasemanager.h:375
 msgctxt "ReleaseVariant|"
 msgid "Checking the download"
 msgstr ""
 
-#: ../app/releasemanager.h:312
+#: ../app/releasemanager.h:376
 msgctxt "ReleaseVariant|"
 msgid "Ready to write"
 msgstr ""
 
-#: ../app/releasemanager.h:313
+#: ../app/releasemanager.h:377
 msgctxt "ReleaseVariant|"
 msgid "Writing"
 msgstr ""
 
-#: ../app/releasemanager.h:314
+#: ../app/releasemanager.h:378
 msgctxt "ReleaseVariant|"
 msgid "Checking the written data"
 msgstr ""
 
-#: ../app/releasemanager.h:315
+#: ../app/releasemanager.h:379
 msgctxt "ReleaseVariant|"
 msgid "Finished!"
 msgstr ""
 
-#: ../app/releasemanager.h:316
+#: ../app/releasemanager.h:380
 msgctxt "ReleaseVariant|"
 msgid "The written data is corrupted"
 msgstr ""
 
-#: ../app/releasemanager.h:317
+#: ../app/releasemanager.h:381
 msgctxt "ReleaseVariant|"
 msgid "Download failed"
 msgstr ""
 
-#: ../app/releasemanager.h:318
+#: ../app/releasemanager.h:382
 msgctxt "ReleaseVariant|"
 msgid "Error"
 msgstr ""
 
-#: ../app/releasemanager.cpp:497
+#: ../app/releasemanager.cpp:550
 #, qt-format
 msgctxt "ReleaseVersion|"
 msgid "%1 Alpha"
 msgstr ""
 
-#: ../app/releasemanager.cpp:499
+#: ../app/releasemanager.cpp:552
 #, qt-format
 msgctxt "ReleaseVersion|"
 msgid "%1 Beta"
 msgstr ""
 
-#: ../app/releasemanager.cpp:501
+#: ../app/releasemanager.cpp:554
 #, qt-format
 msgctxt "ReleaseVersion|"
 msgid "%1 Release Candidate"
 msgstr ""
 
-#: ../app/components/LinuxRestoreDialog.qml:79
+#: ../app/components/RestoreDialog.qml:31
+#, qt-format
+msgctxt "RestoreDialog|"
+msgid "Restore %1?"
+msgstr ""
+
 #: ../app/components/RestoreDialog.qml:66
 msgctxt "RestoreDialog|"
 msgid ""
@@ -336,7 +388,6 @@ msgid ""
 "                                            </p>"
 msgstr ""
 
-#: ../app/components/LinuxRestoreDialog.qml:111
 #: ../app/components/RestoreDialog.qml:98
 msgctxt "RestoreDialog|"
 msgid ""
@@ -344,13 +395,11 @@ msgid ""
 "portable drive.</p>"
 msgstr ""
 
-#: ../app/components/LinuxRestoreDialog.qml:125
 #: ../app/components/RestoreDialog.qml:112
 msgctxt "RestoreDialog|"
 msgid "Your drive was successfully restored!"
 msgstr ""
 
-#: ../app/components/LinuxRestoreDialog.qml:139
 #: ../app/components/RestoreDialog.qml:126
 msgctxt "RestoreDialog|"
 msgid ""
@@ -358,75 +407,67 @@ msgid ""
 "the drive using your system tools."
 msgstr ""
 
-#: ../app/components/LinuxRestoreDialog.qml:151
 #: ../app/components/RestoreDialog.qml:138
 msgctxt "RestoreDialog|"
 msgid "Cancel"
 msgstr ""
 
-#: ../app/components/LinuxRestoreDialog.qml:159
 #: ../app/components/RestoreDialog.qml:146
 msgctxt "RestoreDialog|"
 msgid "Restore"
 msgstr ""
 
-#: ../app/components/LinuxRestoreDialog.qml:159
 #: ../app/components/RestoreDialog.qml:146
 msgctxt "RestoreDialog|"
 msgid "Close"
 msgstr ""
 
-#: ../app/components/RestoreDialog.qml:31
-#, qt-format
-msgctxt "RestoreDialog|"
-msgid "Restore %1?"
-msgstr ""
-
-#: ../app/windrivemanager.cpp:224
+#: ../app/windrivemanager.cpp:227
 msgctxt "WinDrive|"
 msgid "Could not find the helper binary. Check your installation."
 msgstr ""
 
 #: ../helper/linux/writejob.cpp:107 ../helper/linux/writejob.cpp:127
-#: ../helper/win/writejob.cpp:175 ../helper/win/writejob.cpp:182
+#: ../helper/win/writejob.cpp:222 ../helper/win/writejob.cpp:229
 #: ../helper/mac/writejob.cpp:72
 msgctxt "WriteJob|"
 msgid "Destination drive is not writable"
 msgstr ""
 
-#: ../helper/linux/writejob.cpp:113 ../helper/win/writejob.cpp:230
+#: ../helper/linux/writejob.cpp:113 ../helper/win/writejob.cpp:285
 msgctxt "WriteJob|"
 msgid "Source image is not readable"
 msgstr ""
 
-#: ../helper/linux/writejob.cpp:161 ../helper/win/writejob.cpp:269
+#: ../helper/linux/writejob.cpp:161 ../helper/win/writejob.cpp:328
 #: ../helper/mac/writejob.cpp:112
 msgctxt "WriteJob|"
 msgid "Your drive is probably damaged."
 msgstr ""
 
-#: ../helper/linux/writejob.cpp:166 ../helper/win/writejob.cpp:274
+#: ../helper/linux/writejob.cpp:166 ../helper/win/writejob.cpp:333
 #: ../helper/mac/writejob.cpp:117
 msgctxt "WriteJob|"
 msgid "Unexpected error occurred during media check."
 msgstr ""
 
-#: ../helper/win/writejob.cpp:64
+#: ../helper/win/writejob.cpp:65
 msgctxt "WriteJob|"
 msgid "Couldn't open the drive for writing"
 msgstr ""
 
-#: ../helper/win/writejob.cpp:77
+#: ../helper/win/writejob.cpp:89
 msgctxt "WriteJob|"
 msgid "Couldn't lock the drive"
 msgstr ""
 
-#: ../helper/win/writejob.cpp:117
+#: ../helper/win/writejob.cpp:125
+#, qt-format
 msgctxt "WriteJob|"
-msgid "Couldn't dismount the drive"
+msgid "Couldn't remove the drive %1:"
 msgstr ""
 
-#: ../helper/win/writejob.cpp:196
+#: ../helper/win/writejob.cpp:243
 msgctxt "WriteJob|"
 msgid "Couldn't unlock the drive"
 msgstr ""
@@ -449,13 +490,12 @@ msgctxt "main|"
 msgid "Do Nothing"
 msgstr ""
 
-#: ../app/main.qml:142
+#: ../app/main.qml:138
 msgctxt "main|"
 msgid "Image files (*.iso *.raw)"
 msgstr ""
 
-#: ../app/main.qml:142
+#: ../app/main.qml:138
 msgctxt "main|"
 msgid "All files (*)"
 msgstr ""
-

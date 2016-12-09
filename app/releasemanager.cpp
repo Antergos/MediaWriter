@@ -282,13 +282,58 @@ ReleaseListModel::ReleaseListModel(ReleaseManager *parent)
         }
     }*/
 
-    live = new Release (manager(), 2, tr("Custom image"), QT_TRANSLATE_NOOP("Release", "Pick a file from your drive(s)"), { QT_TRANSLATE_NOOP("Release", "<p>Here you can choose a OS image from your hard drive to be written to your flash disk</p><p>Currently it is only supported to write raw disk images (.iso or .bin)</p>") }, Release::LOCAL, "qrc:/logos/folder", {});
-    m_releases.append(custom);
+    QString live_desc1 = tr("The Live Install Image allows you to try a fully functional Antergos environment without making any changes to the current state of your system. When you are ready, you can create a permanent place for Antergos on your system using our GUI installer.");
+    QString live_desc2 = tr("Our default install media.");
+    QString live_desc3 = tr("A fully functional GNOME Desktop Environment that runs directly from a USB drive and includes our GUI installer.");
+    QString live_desc4 = tr("Test drive Antergos without making any changes to your system.");
+    QString live_desc = "<p>" + live_desc1 + "</p><ul><li>" + live_desc2 + "</li><li>" + live_desc3 + "</li><li>" + live_desc4 + "</li></ul>";
 
-    if (m_releases.count() < 2) {
-        custom = new Release (manager(), m_releases.count(), tr("Custom image"), QT_TRANSLATE_NOOP("Release", "Pick a file from your drive(s)"), { QT_TRANSLATE_NOOP("Release", "<p>Here you can choose a OS image from your hard drive to be written to your flash disk</p><p>Currently it is only supported to write raw disk images (.iso or .bin)</p>") }, Release::LOCAL, "qrc:/logos/folder", {});
-        m_releases.append(custom);
-    }
+    live = new Release (
+        manager(),
+        0,
+        tr("Antergos Live Install Media"),
+        QT_TRANSLATE_NOOP("Release", "Fully functional Live Antergos Environment"),
+        { live_desc },
+        Release::PRODUCT,
+        "qrc:/logos/antergos",
+        {}
+    );
+
+    QString minimal_desc1 = tr("The Live Install Image allows you to try a fully functional Antergos environment without making any changes to the current state of your system. When you are ready, you can create a permanent place for Antergos on your system using our GUI installer.");
+    QString minimal_desc2 = tr("Our default install media.");
+    QString minimal_desc3 = tr("A fully functional GNOME Desktop Environment that runs directly from a USB drive and includes our GUI installer.");
+    QString minimal_desc4 = tr("Test drive Antergos without making any changes to your system.");
+    QString minimal_desc = "<p>" + minimal_desc1 + "</p><ul><li>" + minimal_desc2 + "</li><li>" + minimal_desc3 + "</li><li>" + minimal_desc4 + "</li></ul>";
+
+    minimal = new Release (
+        manager(),
+        1,
+        tr("Antergos Minimal Install Media"),
+        QT_TRANSLATE_NOOP("Release", "Installer only"),
+        { minimal_desc },
+        Release::PRODUCT,
+        "qrc:/logos/antergos",
+        {}
+    );
+
+    QString custom_desc1 = tr("Here you can choose a OS image from your hard drive to be written to your flash disk.");
+    QString custom_desc2 = tr("Currently only raw disk images (.iso or .bin) are supported.");
+    QString custom_desc = "<p>" + custom_desc1 + "</p><p>" + custom_desc2 + "</p>";
+
+    custom = new Release (
+        manager(),
+        2,
+        tr("Custom image"),
+        QT_TRANSLATE_NOOP("Release", "Pick a file from your drive(s)"),
+        { custom_desc },
+        Release::LOCAL,
+        "qrc:/logos/folder",
+        {}
+    );
+
+    m_releases.append(live);
+    m_releases.append(minimal);
+    m_releases.append(custom);
 
     ReleaseVersion *customVersion = new ReleaseVersion(custom, 0);
     custom->addVersion(customVersion);
