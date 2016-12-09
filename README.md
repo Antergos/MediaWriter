@@ -6,7 +6,7 @@ It is able to automatically download the required image for them and write them 
 
 This overwrites the drive's partition layout though, so it also provides a way to restore a single-partition layout with a FAT32 partition.
 
-![Antergos Media Writer running, with expanded image list](/dist/screenshots/expanded.png)
+![Antergos Media Writer running, with expanded image list](/dist/screenshots/title.png)
 
 ## Status
 
@@ -46,6 +46,4 @@ To release a standalone package, use `macdeployqt`, supplied with your Qt instal
 
 ## Translation
 
-If you want to help with translating Antergos Media Writer, please visit our [Zanata project page](https://antergos.zanata.org/iteration/view/mediawriter/master).
-
-Information about the individual Antergos flavors are retrieved from the websites and translated as a separate project.
+If you want to help with translating Antergos Media Writer, please visit our [Transifex project page](https://www.transifex.com/faidoc/antergos/mediawriter).
