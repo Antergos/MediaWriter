@@ -275,7 +275,7 @@ Dialog {
                             currentIndex: drives.selectedIndex
                             onCurrentIndexChanged: {
                                 drives.selectedIndex = currentIndex
-                                releases.selected.version.variant.resetStatus()
+                                /*releases.selected.version.variant.resetStatus()*/
                             }
                             onModelChanged: {
                                 if (drives.length <= 0)

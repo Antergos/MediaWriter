@@ -172,11 +172,11 @@ void ReleaseManager::onStringDownloaded(const QString &text) {
         int version;
         QString status;
 
-        if (QStringList{"cloud", "cloud_base", "atomic", "everything", "minimal", "docker", "docker_base"}.contains(release))
+        /*if (QStringList{"cloud", "cloud_base", "atomic", "everything", "minimal", "docker", "docker_base"}.contains(release))
             continue;
 
         release.replace(QRegExp("_kde$"), "");
-        release.replace("_", " ");
+        release.replace("_", " ");*/
 
         if (arch == "armhfp")
             continue;
@@ -299,10 +299,10 @@ ReleaseListModel::ReleaseListModel(ReleaseManager *parent)
         {}
     );
 
-    QString minimal_desc1 = tr("The Live Install Image allows you to try a fully functional Antergos environment without making any changes to the current state of your system. When you are ready, you can create a permanent place for Antergos on your system using our GUI installer.");
-    QString minimal_desc2 = tr("Our default install media.");
-    QString minimal_desc3 = tr("A fully functional GNOME Desktop Environment that runs directly from a USB drive and includes our GUI installer.");
-    QString minimal_desc4 = tr("Test drive Antergos without making any changes to your system.");
+    QString minimal_desc1 = tr("The Minimal Install Image includes only our GUI installer.");
+    QString minimal_desc2 = tr("Smaller file size saves bandwidth and improves initial download time.");
+    QString minimal_desc3 = tr("Great option for slow connections.");
+    QString minimal_desc4 = tr("Best option for running the installer on less powerful hardware.");
     QString minimal_desc = "<p>" + minimal_desc1 + "</p><ul><li>" + minimal_desc2 + "</li><li>" + minimal_desc3 + "</li><li>" + minimal_desc4 + "</li></ul>";
 
     minimal = new Release (
@@ -746,7 +746,11 @@ void ReleaseVariant::download() {
         setStatus(DOWNLOADING);
         if (m_size)
             m_progress->setTo(m_size);
-        QString ret = DownloadManager::instance()->downloadFile(this, url(), DownloadManager::dir(), progress());
+
+        QString file_name = ("Live" == name()) ? "antergos" : "antergos-minimal";
+		QString dl_url = "http://mirrors.antergos.com/iso/release/" + file_name + "-2016.11.20-x86_64.iso";
+		QUrl URL = QUrl(dl_url);
+        QString ret = DownloadManager::instance()->downloadFile(this, URL, DownloadManager::dir(), progress());
         if (!ret.isEmpty()) {
             m_iso = ret;
             emit isoChanged();

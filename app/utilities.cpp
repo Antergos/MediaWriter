@@ -101,6 +101,7 @@ QString DownloadManager::dir() {
  * TODO explain how this works
  */
 QString DownloadManager::downloadFile(DownloadReceiver *receiver, const QUrl &url, const QString &folder, Progress *progress) {
+
     QString bareFileName = QString("%1/%2").arg(folder).arg(url.fileName());
 
     QDir dir;
@@ -117,7 +118,7 @@ QString DownloadManager::downloadFile(DownloadReceiver *receiver, const QUrl &ur
 
     m_current = new Download(this, receiver, bareFileName, progress);
     connect(m_current, &QObject::destroyed, [&](){ m_current = nullptr; });
-    fetchPageAsync(this, "https://mirrors.antergos.com/" + url.path() + "?mirrorlist");
+    fetchPageAsync(this, url.toString());
 
     return QString();
 }
