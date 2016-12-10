@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# rm -f *.qm *.po websites/getfedora/*.po websites/spins/*.po websites/labs/*.po
+rm -f *.qm
 
-#transifex pull
+(cd .. && tx pull)
 
 echo -e '<RCC>' > translations.qrc
 echo -e '\t<qresource prefix="/translations/">' >> translations.qrc
