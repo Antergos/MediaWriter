@@ -10,17 +10,17 @@ msgctxt "BackButton|"
 msgid "Back"
 msgstr ""
 
-#: ../app/utilities.cpp:239
+#: ../app/utilities.cpp:240
 msgctxt "Download|"
 msgid "Unable to fetch the requested image."
 msgstr ""
 
-#: ../app/utilities.cpp:329
+#: ../app/utilities.cpp:330
 msgctxt "Download|"
 msgid "The download file is not writable."
 msgstr ""
 
-#: ../app/utilities.cpp:413
+#: ../app/utilities.cpp:414
 msgctxt "Download|"
 msgid "Connection timed out"
 msgstr ""
@@ -202,38 +202,38 @@ msgctxt "Release|"
 msgid "Other"
 msgstr ""
 
-#: ../app/releasemanager.cpp:797
+#: ../app/releasemanager.cpp:801
 msgctxt "ReleaseArchitecture|"
 msgid "Intel 64bit"
 msgstr ""
 
-#: ../app/releasemanager.cpp:797
+#: ../app/releasemanager.cpp:801
 msgctxt "ReleaseArchitecture|"
 msgid "ISO format image for Intel, AMD and other compatible PCs (64-bit)"
 msgstr ""
 
-#: ../app/releasemanager.cpp:798
+#: ../app/releasemanager.cpp:802
 msgctxt "ReleaseArchitecture|"
 msgid "Intel 32bit"
 msgstr ""
 
-#: ../app/releasemanager.cpp:798
+#: ../app/releasemanager.cpp:802
 msgctxt "ReleaseArchitecture|"
 msgid "ISO format image for Intel, AMD and other compatible PCs (32-bit)"
 msgstr ""
 
-#: ../app/releasemanager.cpp:799
+#: ../app/releasemanager.cpp:803
 msgctxt "ReleaseArchitecture|"
 msgid "ARM v7"
 msgstr ""
 
-#: ../app/releasemanager.cpp:799
+#: ../app/releasemanager.cpp:803
 msgctxt "ReleaseArchitecture|"
 msgid ""
 "LZMA-compressed raw image for ARM v7-A machines like the Raspberry Pi 2 and 3"
 msgstr ""
 
-#: ../app/releasemanager.cpp:285 ../app/releasemanager.cpp:302
+#: ../app/releasemanager.cpp:285
 msgctxt "ReleaseListModel|"
 msgid ""
 "The Live Install Image allows you to try a fully functional Antergos "
@@ -242,19 +242,19 @@ msgid ""
 "system using our GUI installer."
 msgstr ""
 
-#: ../app/releasemanager.cpp:286 ../app/releasemanager.cpp:303
+#: ../app/releasemanager.cpp:286
 msgctxt "ReleaseListModel|"
 msgid "Our default install media."
 msgstr ""
 
-#: ../app/releasemanager.cpp:287 ../app/releasemanager.cpp:304
+#: ../app/releasemanager.cpp:287
 msgctxt "ReleaseListModel|"
 msgid ""
 "A fully functional GNOME Desktop Environment that runs directly from a USB "
 "drive and includes our GUI installer."
 msgstr ""
 
-#: ../app/releasemanager.cpp:288 ../app/releasemanager.cpp:305
+#: ../app/releasemanager.cpp:288
 msgctxt "ReleaseListModel|"
 msgid "Test drive Antergos without making any changes to your system."
 msgstr ""
@@ -262,6 +262,26 @@ msgstr ""
 #: ../app/releasemanager.cpp:294
 msgctxt "ReleaseListModel|"
 msgid "Antergos Live Install Media"
+msgstr ""
+
+#: ../app/releasemanager.cpp:302
+msgctxt "ReleaseListModel|"
+msgid "The Minimal Install Image includes only our GUI installer."
+msgstr ""
+
+#: ../app/releasemanager.cpp:303
+msgctxt "ReleaseListModel|"
+msgid "Smaller file size saves bandwidth and improves initial download time."
+msgstr ""
+
+#: ../app/releasemanager.cpp:304
+msgctxt "ReleaseListModel|"
+msgid "Great option for slow connections."
+msgstr ""
+
+#: ../app/releasemanager.cpp:305
+msgctxt "ReleaseListModel|"
+msgid "Best option for running the installer on less powerful hardware."
 msgstr ""
 
 #: ../app/releasemanager.cpp:311
